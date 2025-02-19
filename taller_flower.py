@@ -25,7 +25,7 @@ if opcion == "Inicio":
     st.write("""
     Esta aplicación utiliza un modelo de ML para predecir la especie de una Flor Iris basado en las características ingresadas.
     """)
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg", caption="Flor Iris", use_column_width=True)
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg", caption="Flor Iris", use_container_width=True)
 
 # Página de Predicción
 elif opcion == "Predicción":
