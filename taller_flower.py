@@ -13,10 +13,10 @@ import numpy as np
 modelo = joblib.load("modelo.pkl")
 
 # Menú de navegación en el lado izquierdo (combo box)
-st.sidebar.title("Menú de Navegación")
+st.sidebar.title("Estas Son Tus Opciones:")
 opcion = st.sidebar.selectbox(
-    "Selecciona una opción:",
-    ("Inicio", "Predicción", "Acerca de")
+    "Escoge Una:",
+    ("Inicio", "Predicción", "Acerca de...")
 )
 
 # Página de Inicio
