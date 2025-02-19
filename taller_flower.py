@@ -28,7 +28,7 @@ if opcion == "Inicio":
     st.image(
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg",
         caption="Flor Iris",
-        use_column_width=True  # Parámetro corregido
+        use_container_width=True  # Parámetro actualizado
     )
 
 # Página de Predicción
@@ -63,19 +63,19 @@ elif opcion == "Predicción":
             st.image(
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/800px-Kosaciec_szczecinkowaty_Iris_setosa.jpg",
                 caption="Iris Setosa",
-                use_column_width=True  # Parámetro corregido
+                use_container_width=True  # Parámetro actualizado
             )
         elif especie_predicha == "Iris Versicolor":
             st.image(
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/800px-Iris_versicolor_3.jpg",
                 caption="Iris Versicolor",
-                use_column_width=True  # Parámetro corregido
+                use_container_width=True  # Parámetro actualizado
             )
         elif especie_predicha == "Iris Virginica":
             st.image(
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg",
                 caption="Iris Virginica",
-                use_column_width=True  # Parámetro corregido
+                use_container_width=True  # Parámetro actualizado
             )
 
 # Página Acerca de
@@ -90,7 +90,8 @@ elif opcion == "Acerca de":
     - Scikit-learn para el modelo de Machine Learning.
     """)
     st.write("""
-    **Desarrollado por:** [Tu nombre o equipo]
+    **Desarrollado por:**
+    - Oswaldo Sotomayor
     """)
     # Enlace a GitHub
     st.markdown("""
