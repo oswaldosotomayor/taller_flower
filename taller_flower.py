@@ -13,9 +13,9 @@ import numpy as np
 modelo = joblib.load("modelo.pkl")
 
 # Menú de navegación en el lado izquierdo (combo box)
-st.sidebar.title("Estas Son Tus Opciones:")
+st.sidebar.title("Menú de Navegación")
 opcion = st.sidebar.selectbox(
-    "Escoge Una:",
+    "Selecciona una opción:",
     ("Inicio", "Predicción", "Acerca de")
 )
 
@@ -25,7 +25,11 @@ if opcion == "Inicio":
     st.write("""
     Esta aplicación utiliza un modelo de ML para predecir la especie de una Flor Iris basado en las características ingresadas.
     """)
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg", caption="Flor Iris", use_container_width=True)
+    st.image(
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg",
+        caption="Flor Iris",
+        use_column_width=True  # Parámetro corregido
+    )
 
 # Página de Predicción
 elif opcion == "Predicción":
@@ -56,11 +60,23 @@ elif opcion == "Predicción":
 
         # Mostrar la imagen correspondiente a la especie predicha
         if especie_predicha == "Iris Setosa":
-            st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/800px-Kosaciec_szczecinkowaty_Iris_setosa.jpg", caption="Iris Setosa", use_container_width=True)
+            st.image(
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/800px-Kosaciec_szczecinkowaty_Iris_setosa.jpg",
+                caption="Iris Setosa",
+                use_column_width=True  # Parámetro corregido
+            )
         elif especie_predicha == "Iris Versicolor":
-            st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/800px-Iris_versicolor_3.jpg", caption="Iris Versicolor", use_container_width=True)
+            st.image(
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/800px-Iris_versicolor_3.jpg",
+                caption="Iris Versicolor",
+                use_column_width=True  # Parámetro corregido
+            )
         elif especie_predicha == "Iris Virginica":
-            st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg", caption="Iris Virginica",use_container_width=True)
+            st.image(
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg",
+                caption="Iris Virginica",
+                use_column_width=True  # Parámetro corregido
+            )
 
 # Página Acerca de
 elif opcion == "Acerca de":
@@ -74,11 +90,7 @@ elif opcion == "Acerca de":
     - Scikit-learn para el modelo de Machine Learning.
     """)
     st.write("""
-    **Desarrollado por:**
-    - Carolina Gamarra 
-    - Jorge Caballero
-    - Paul Morales
-    - Oswaldo Sotomayor
+    **Desarrollado por:** [Tu nombre o equipo]
     """)
     # Enlace a GitHub
     st.markdown("""
