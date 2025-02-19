@@ -80,3 +80,8 @@ elif opcion == "Acerca de":
     - Paul Morales
     - Oswaldo Sotomayor
     """)
+    # Enlace a GitHub
+    st.markdown("""
+    **Referencia:**
+    - [Visita mi perfil de GitHub](https://github.com/oswaldosotomayor/taller_flower)
+    """)
