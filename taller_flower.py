@@ -16,7 +16,7 @@ modelo = joblib.load("modelo.pkl")
 st.sidebar.title("Estas Son Tus Opciones:")
 opcion = st.sidebar.selectbox(
     "Escoge Una:",
-    ("Inicio", "Predicción", "Acerca de...")
+    ("Inicio", "Predicción", "Acerca de")
 )
 
 # Página de Inicio
