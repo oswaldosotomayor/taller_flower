@@ -58,9 +58,9 @@ elif opcion == "Predicción":
         if especie_predicha == "Iris Setosa":
             st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/800px-Kosaciec_szczecinkowaty_Iris_setosa.jpg", caption="Iris Setosa", use_column_width=True)
         elif especie_predicha == "Iris Versicolor":
-            st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/800px-Iris_versicolor_3.jpg", caption="Iris Versicolor", use_column_width=True)
+            st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Iris_versicolor_3.jpg/800px-Iris_versicolor_3.jpg", caption="Iris Versicolor", use_container_width=True)
         elif especie_predicha == "Iris Virginica":
-            st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg", caption="Iris Virginica", use_column_width=True)
+            st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/800px-Iris_virginica.jpg", caption="Iris Virginica",use_container_width=True)
 
 # Página Acerca de
 elif opcion == "Acerca de":
